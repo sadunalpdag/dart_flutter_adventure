@@ -1,0 +1,34 @@
+//3
+//goaway
+//30
+//sadun
+
+class hesaplama {
+  int age;
+  String name;
+  hesaplama(){
+    
+    age = 30;
+    name = "sadun";
+  }
+    
+    letsgo(){print('goaway');}
+}
+
+addnumber(num1,num2){return num1+num2;}
+
+//return sonuc olusturur fonksiyonda 
+void main() {
+ print (addnumber(1, 2));
+//print bildiğin print
+  
+  hesaplama kare =hesaplama();
+  
+  kare.letsgo();
+  
+  print(kare.age);
+  
+  print(kare.name);
+  
+
+}
