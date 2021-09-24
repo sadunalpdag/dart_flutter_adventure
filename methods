@@ -1,0 +1,24 @@
+main() {
+
+String mesaj= 'merhaba ';
+
+print ('mesaj yazısının karakter sayısı ${mesaj.length}');
+
+print(mesaj[2]);
+
+var yeni = mesaj.replaceAll('a', 'x');
+
+print(yeni);
+
+num sayi = 99.1;
+
+print (sayi.ceil());
+print (sayi.floor());
+
+ // print(isim+1); yazamayacağımız için $ kullanarak sayıyı string yaptık belli yerlerde
+ 
+// mesaj yazısının karakter sayısı 8
+//r
+//merhxbx 
+//100
+//99
