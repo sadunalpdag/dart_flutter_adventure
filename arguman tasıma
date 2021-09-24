@@ -1,0 +1,53 @@
+//3
+//goaway
+//30
+//31 print içi işlemler
+//60
+//sadun
+
+
+
+
+//Info: Found this candidate, but the arguments don't match.
+ // hesaplama(age, name){
+  //bu hata arguman tanımladın ama kullanmayı unuttun hatası neden kullanıyorsun..
+  
+  
+class hesaplama {
+  int age;
+  String name;
+  hesaplama(
+    {age, name
+      
+      //braket burada kullanıyorsun fonksiyon cağırıken kullanmıyorsun 
+  }){
+    
+    this.age = age;
+    this.name = name;
+    
+    //sonra burayıda yukarıya tasıyoruz.... gerek yok ama yazılabilir
+  }
+    
+    letsgo(){print('goaway');}
+}
+
+addnumber(num1,num2){return num1+num2;}
+
+//return sonuc olusturur fonksiyonda 
+void main() {
+ print (addnumber(1, 2));
+//print bildiğin print
+  
+  hesaplama kare =hesaplama(age:30, name:"sadun");
+  
+  kare.letsgo();
+  
+  print(kare.age);
+  print (kare.age+1);
+  
+  print (kare.age+kare.age); 
+  
+  print(kare.name);
+  
+
+}
