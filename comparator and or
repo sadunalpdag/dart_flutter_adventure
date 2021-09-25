@@ -1,0 +1,40 @@
+
+main() {
+
+  print (5==2);
+  print(DateTime.now());
+  print(5!=2);
+  print(DateTime.now());
+  var sonuc= 5!=2;
+
+  print(sonuc);
+  print(DateTime.now());
+  var tamsayi= 100;
+
+  print(tamsayi is int );
+  print(DateTime.now());
+  print(tamsayi is String); //tamsayı integerdeir bundan dolayı string değildir
+  print(DateTime.now());
+  print(100 is int);
+  print(DateTime.now());
+  bool deneme = true;
+
+  print(!deneme); //!booleon ı tersine cevirir.
+  print(DateTime.now());
+//
+//ve veya operatoru 
+
+print((5>2) && (4>2)); //bu ve tum kosullar tutatacak
+print(DateTime.now());
+  /*false
+true
+true
+true
+false
+true
+false
+true
+*/
+}  
+
+}  
