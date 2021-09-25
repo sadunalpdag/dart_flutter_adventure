@@ -1,0 +1,31 @@
+main() {
+  paket();
+  print(islem(5, 3));
+
+  print(islem2(5, 3));
+
+  mesaj1('MEHMET', 'OZTURK', 21);
+  //mesaj2('meh');
+  //mesaj3();
+}
+
+void paket() {
+  print('merhaba');
+}
+// yerine daha kısa fonksiyon yazabiliriz.
+
+islem2(int say1, int say2) => say1 * say2;
+
+islem(var sayi1, var sayi2) {
+  var carpma = sayi1 * sayi2;
+  return carpma;
+}
+
+//Bu fonksiyonda tum bilgiler girilmeli ve sırasyla
+mesaj1(
+  String isim,
+  String Soyisim,
+  int yas,
+) {
+  print('sevgili $isim $Soyisim $yas. kutlu olsun');
+}
