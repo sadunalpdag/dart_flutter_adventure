@@ -1,0 +1,49 @@
+main() {
+
+var toplama = 4+3;
+
+print(toplama);
+
+var bolme =10/2; //bu kusuratlı sonuc verir~/ yapılırsa yuvarlar
+
+print(bolme);
+
+var kalan =4%3;
+
+
+
+print(kalan);
+
+print('kalan:${4%3}');
+
+print('kalan:${kalan}');
+
+print(kalan+1);
+
+kalan+=2;
+print(kalan);
+
+kalan-=2;
+
+print(kalan);
+
+kalan-=1;
+
+print(kalan);
+
+var n=0;
+
+n++;
+
+print(n);
+
+var a=3;
+print(a);
+
+int x=a++; // burada cycle dan sonra + 1 artıs olur
+print(a);
+
+print(x);
+
+  
+}
