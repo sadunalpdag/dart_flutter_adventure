@@ -1,0 +1,36 @@
+main() {
+  var liste1 = <int>[1, 2, 3, 4, 5, 5, 7, 7, 8];
+
+  print(liste1);
+
+  var setim = liste1.toSet(); // syntax dikkat...
+
+  print(setim);
+
+  var num = Set<int>.from([3, 4, 3, 5, 3, 6, 1]); // her method parantez içinde.
+
+  print(num);
+
+  var set1 = Set<int>.from([
+    1,
+    2,
+    3,
+    4,
+    5,
+    5,
+    6,
+    75,
+  ]);
+  var set2 = Set<int>.from([1, 5, 5, 4, 66, 54, 75]);
+
+  var intersec = set1.intersection(set2);
+
+  print(intersec);
+
+  var fark1 = set1.difference(set2);
+  var fark2 = set2.difference(set1);
+
+  print(fark1); //bu onemli iki durumun birbirinden farkııı
+
+  print(fark2);
+}
