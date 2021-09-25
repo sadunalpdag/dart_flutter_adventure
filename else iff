@@ -1,0 +1,31 @@
+main(List<String> args) {
+var x=13;
+  if (x>=5 && x<=13) {
+
+    print(x*5);
+
+    print(x);
+    
+  } else {print(x*6);
+  print(x);
+  }
+  
+
+  if  (x==5){
+
+    print('x 5 e esit değildir');
+    
+  } else if(x==4) { print('x 4 e esit değildir');
+  }
+
+  else if (x==6) { print('x 6 e esit değildir');
+  }
+  else { print('x hiçbirsey e esit değildir');
+  }
+}
+
+
+*/ if 
+else if 
+else seklinde sıralama vardır
+/*
