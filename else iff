@@ -1,3 +1,9 @@
+65
+13
+x hiçbirsey e esit değildir
+sayi 5den farkli
+25
+
 main(List<String> args) {
 var x=13;
   if (x>=5 && x<=13) {
@@ -22,8 +28,15 @@ var x=13;
   }
   else { print('x hiçbirsey e esit değildir');
   }
-}
 
+  
+  x==5  ? print('sayi 5 e esit'): print('sayi 5den farkli');
+
+  var degisken = null;
+
+  var soru =(degisken ?? 5); //burada degisken null ise bir yandakini atama yapıyor
+  print(soru*5);
+}
 
 */ if 
 else if 
