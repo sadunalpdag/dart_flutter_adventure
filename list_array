@@ -1,0 +1,98 @@
+main() {
+  var liste = [
+    'a',
+    'beril',
+    'c',
+    'd'
+  ]; // var eklemek gerekiyor basına deklere edilmeli
+
+  print(liste);
+
+  print(liste[3]);
+
+  liste[2] = 'zeynep';
+
+  print(liste);
+
+  print('liste uzunluğu ${liste.length}');
+
+  print('ikinci liste uyesinin sayısı ${liste[2].length}');
+
+  liste.add('22'); // arraye yeni bir veri ekleme
+
+  print(liste);
+
+  List<int> int_list = [2, 3, 4, 5, 6, 7];
+
+  print(int_list);
+
+  List<String> liste4 = [];
+
+  if (liste4.isEmpty) {
+    print('liste boş ${liste4.isEmpty}');
+    liste4
+      ..add('14')
+      ..add('22')
+      ..add('54'); //burada ekleme yaptım ama dongu olmadı
+  } else {
+    print('liste dolu ${liste4.isNotEmpty}');
+  }
+
+  print(liste4); //eger bos ise birinci index 14 eklendi
+  if (liste4.isEmpty) {
+    print('liste boş ${liste4.isEmpty}');
+    liste4
+      ..add('14')
+      ..add('22')
+      ..add('54'); //burada ekleme yaptım ama dongu olmadı
+  } else {
+    print('liste dolu ${liste4.isNotEmpty}');
+    liste4.addAll(
+        ['42', '45', '54']); // burada iste doldu...yeni elemanlar eklendi
+  }
+  print(liste4); //eger bos ise birinci index 14 eklendi
+
+  liste4.removeAt(2); //index 2 yi siler
+
+  print(liste4);
+
+  liste4.removeLast(); //son listeyi siler
+  print(liste4);
+
+  liste.insert(4, '3');
+
+  print(liste4);
+
+  print(liste4.last);
+
+  print(liste4.first);
+
+  String parcala = 'today its good day';
+
+  print(parcala.split(" "));
+
+  var parcali = parcala.split(
+      " "); //parcali tanımlanırken var eklenir....unutma yeni bir parcali bir liste oldugu için Var deklare edilir
+
+  String cumle = parcali.join(" ");
+
+  print(cumle);
+
+  int_list.add(48);
+  int_list.add(48); //tek tek eklenecek
+  int_list.add(48);
+  print(int_list);
+
+  List<int> num = [1, 2, 3, 4, 5];
+
+  print(num);
+
+  print(num.reduce((x, element) {
+    //1*2*3*4*5
+    return x - element; //{bunun sebebi fonksiyon return yapıyor}
+  }));
+
+  print(num[0].isOdd);
+
+  return; // programı buraya kadar calıstırır
+}
