@@ -1,0 +1,30 @@
+main() {
+  List<int> numaralar = [5, 6, 4, 3, 2, 6];
+
+  print(numaralar);
+
+  Iterable iterate = numaralar.where((numaralar2) {
+    print('kontrol ediliyor  $numaralar2');
+    return numaralar2 > 5 ? true : false;
+  });
+  print(iterate); //bunu tetiklemezsen print calışmıyor
+
+  var map = numaralar.map((renk) {
+    if (renk == 5) return 78;
+    if (renk == 6)
+      return 115;
+    else
+      return 6; // değiştirmeee yapıyoruz
+  });
+
+  print(map);
+
+  print(numaralar.take(5));
+
+  print(numaralar.takeWhile((n) {
+    if (n > 3)
+      return true;
+    else
+      return false;
+  }));
+}
