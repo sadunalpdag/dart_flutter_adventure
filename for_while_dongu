@@ -1,0 +1,42 @@
+main() {
+  List<int> listem17 = [1, 2, 3, 4, 5, 6, 7, 89, 91];
+  for (int i = 0; i < listem17.length; i++) {
+    var eleman = listem17[i];
+
+    print(listem17.length);
+
+    print(DateTime.now());
+    print(listem17);
+    print(i);
+
+    if (eleman.isOdd)
+      print(' $eleman sayisi tektir ');
+    else
+      print('$eleman sayisi cifttir ');
+
+    if (i == 5) listem17.add(33);
+  }
+
+  fon(eleman) {
+    if (eleman.isOdd)
+      print('$eleman tektir');
+    else
+      print('$eleman ciftir');
+  }
+
+  ;
+  List<int> listem18 = [1, 2, 3, 4, 5, 6, 7, 89, 91];
+  listem18.forEach(fon); //iteration için sadece
+
+  int s = 0;
+  while (s < 10) {
+    print('s degeri $s');
+    s++;
+  }
+
+  int m = 0;
+  do {
+    print(' m degeri $m');
+    m++;
+  } while (m > 10);
+}
